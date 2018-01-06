@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Startpage</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="NPL1270018" name="author">
+	<meta content="" name="description">
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-2.2.2.min.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<span id="header-time"></span>
+		</div>
+		<script type="text/javascript">
+		          var dt = new Date();
+		          minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+		          second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+		          var time = dt.getHours() + ":" + minute + ":" + second;
+
+		          $("#header-time").text(time);
+
+		          setInterval(function(){
+		              dt = new Date();
+		              minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+		              second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+		              time = dt.getHours() + ":" + minute + ":" + second;
+		              $("#header-time").text(time);
+
+		          },1000);
+		</script>
+		<div class="search-row">
+			<input autofocus="true" id="search-field" name="search-field" onkeypress="return search(event)" placeholder="Search in Google" type="text">
+			<script type="text/javascript">
+			         function search(e) {
+			             if (e.keyCode == 13) {
+			                 var val = $("#search-field").val();
+			                 window.location = "https://encrypted.google.com/search?q=" + val;
+			                 return false;
+			             }
+			         }
+			</script>
+		</div>
+			<div class="terminal-innerCon">
+				<div class="favCon">
+					<div class="favCon-header">
+						<span>&nbsp>Favorites</span>
+					</div>
+					<div class="favCon-body">
+						<a href="https://chickendinnershow.com/scoreboard/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>H1Z1 Scoreboard</span>
+							</div>
+						</div></a> <a href="http://foad2.unicaen.fr/moodle/login/index.php" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>FOAD2</span>
+							</div>
+						</div></a> <a href="https://dub130.mail.live.com/?fid=flinbox" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Hotmail</span>
+							</div>
+						</div></a> <a href="https://inbox.google.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Gmail</span>
+							</div>
+						</div></a>
+						<a href="https://discordapp.com/channels/@me" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Discord</span>
+							</div>
+						</div></a>
+						 <a href="http://steamcommunity.com/id/NoLimitJustSkill/allcomments" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Comments</span>
+							</div>
+						</div></a>
+					</div>
+				</div>
+				<div class="favCon">
+					<div class="favCon-header">
+						<span>&nbsp>Media</span>
+					</div>
+					<div class="favCon-body">
+						<a href="https://www.youtube.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Youtube</span>
+							</div>
+						</div></a> <a href="https://www.twitch.tv/directory/following" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Twitch</span>
+							</div>
+						</div></a> <a href="https://twitter.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Twitter</span>
+							</div>
+						</div></a> <a href="http://9gag.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>9GAG</span>
+							</div>
+						</div></a> <a href="http://hiddenlol.com/" onfocus="if(this.blur)this.blur()">
+					</a>
+					</div>
+				</div>
+				<div class="favCon">
+					<div class="favCon-header">
+						<span>&nbsp>CS:GO</span>
+					</div>
+					<div class="favCon-body">
+						<a href="http://blog.counter-strike.net/" onfocus="if(this.blur)this.blur()">
+						<a href="https://www.reddit.com/r/GlobalOffensive/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>/r/GlobalOffensive/</span>
+							</div>
+						</div></a>
+ 						<a href="https://opskins.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>OPSkins</span>
+							</div>
+						</div></a>
+
+						<a href="https://report.mrcraig.xyz/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Report Bot</span>
+							</div>
+						</div></a>
+						<a href="https://www.faceit.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Faceit</span>
+							</div>
+						</div></a>
+						<a href="http://csgolounge.com/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>CSGO Lounge</span>
+							</div>
+						</div></a>
+						<a href="http://csgo-stats.com/NoLimitJustSkill/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>CSGO-Stats</span>
+							</div>
+						</div></a>
+						<a href="http://www.hltv.org/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>HLTV</span>
+							</div>
+						</div></a>
+						<a href="http://www.gamepanel.serenityservers.net/" onfocus="if(this.blur)this.blur()">
+						<div class="favCon-el">
+							<div class="favCon-el-content">
+								<span>Server</span>
+							</div>
+						</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+		<title>OnePlayer</title>
+		<link rel="icon" type="image/ico" href="1.html" sizes="45x48">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="../use.fontawesome.com/5d2cbb26f6.js"></script>
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="css/fontello.css" >
+		<link href="deface/ressources/favicon.ico" rel="icon"/>
+
+	</head>
+
+	<body class="loading">
+		<div id="wrapper">
+	<video autoplay="1" loop="" id="player">
+            <source src="background.mp4" type="video/mp4" volume="100" id="bgvid1">
+<script>
+        var video = document.currentScript.parentElement;
+        video.volume = 0.1;
+</script>
+             </video>
+			<div id="overlay"></div>
+			<div id="main">
+					<header id="header">
+<ul>
+							<marquee aligt="center" scrollamount="20" width="540" style="width:540px;">______________________________________________________________</marquee>
+							</ul>
+                      <span id="doc_time">Time</span>
+						<h1>OnePlayer</h1>
+						<p onclick="changebg()">&bull;&nbsp;&bull;&nbsp;&bull;</p>
+						<nav>
+							<ul>
+                                                                <li><a href="http://steamcommunity.com/id/NoLimitJustSkill/"  target="_blank" class="icon-steam"></a></li>
+                                                                <li><a href="https://www.oneplayer.com/csgo/autoexec.cfg"  target="_blank" class="icon-cog-alt" aria-hidden="true"></a></li>
+                                                                <li><a href="portfolio/index.html"  target="_blank" class="icon-picture" aria-hidden="true"></a></li>
+                                                                <li><a href="startpage/index.html"  target="_blank" class="icon-chrome" aria-hidden="true"></a></li>
+                                                                <li><a href="config/index.html"  target="_blank" class="icon-desktop" aria-hidden="true"></a></li>
+							</ul>
+							<ul>
+							<marquee aligt="center" scrollamount="20" direction="right" width="540" style="width:540px;">______________________________________________________________</marquee>
+							</ul>
+
+						</nav>
+					</header>
+			</div>
+		</div>
+	</body>
+
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<script type="text/javascript">
+ clock();
+</script>
+
+</script>
+
+
+</html>

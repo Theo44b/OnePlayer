@@ -1,0 +1,96 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100% ;
+	width: 100% ;
+	background-color: #000;
+}
+
+iframe{
+	border: 0px;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	overflow:hidden;
+	opacity: 1;
+	transition: opacity 1.5s ease-in;
+}
+
+#changeframe{
+	max-height: 2em;
+	width:100px;
+	background-color: #000;
+	color: #fff;
+	position: fixed;
+	top: 10px;
+	right: 25px;
+	z-index: 10;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 14px;
+	transition: max-height 0.7s ease-out;
+	font-family: Arial;
+	overflow: hidden;
+}
+
+.linkprof{
+	background-color: #505050;
+	margin:2px;
+}
+
+.linkprof:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#prof1{
+	margin-top: 14px;
+}
+
+
+
+#changeframe:hover {
+	max-height: 25em;
+}
+
+#goto{
+	height: 15px;
+	width: 70px;
+	background-color: #333;
+	color: #bbb;
+	position: fixed;
+	top: 45px;
+	right: 40px;
+	z-index: 7 ;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 5px;
+	font-family: Arial;
+	overflow: hidden;
+	font-size: 13px;
+	opacity: 0.7;
+}
+
+#goto a:link{
+	color:#aaa;
+	text-decoration: none;
+}
+#goto a normal{color:#aaa;}
+#goto a:visited{color:#aaa;}
+#goto a:hover{color:#aaa;}
+#goto a:active{color:#aaa;}
+
+#iframes{
+	z-index: 4;
+}
+
+#iframep{
+	z-index: 6;
+}
