@@ -27,7 +27,7 @@
 				var player = document.getElementById('player');
       			var mp4Vid = document.getElementById('bgvid1');
       			player.pause();
-	      		mp4Vid.src = "background2.mp4";
+	      		mp4Vid.src = "background.mp4";
 	      		player.load();
 		    	player.play();
 			}else{
